@@ -35,6 +35,8 @@ element.addEventListener("click", event => {
   //crear boton en la celda 3
   let newDeleteCell = tableRow.insertCell(3);
   let deleteButton = document.createElement("button")
+  const classAdd = deleteButton.classList;
+  classAdd.add("btn","btn-outline-info","btn-sm");
   deleteButton.textContent = "x";
   newDeleteCell.appendChild(deleteButton)
   //evento para eliminar tablerow
